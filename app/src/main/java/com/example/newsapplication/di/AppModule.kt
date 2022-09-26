@@ -37,5 +37,5 @@ import javax.inject.Singleton
             .addConverterFactory(GsonConverterFactory.create())
             .client(okHttpClient())
             .build()
-            .create()
+            .create(NewsService::class.java)
 }
